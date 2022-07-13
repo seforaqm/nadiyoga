@@ -1,0 +1,132 @@
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+cite {
+    font-family: 'Amatic SC', cursive;
+}
+
+.row.content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: #e0ece4;
+
+}
+
+.nav-link {
+    color: rgba(48, 48, 48, 0.788) !important;
+}
+
+
+
+.navbar .nav-item .dropdown-menu {
+    display: none;
+}
+
+.navbar .nav-item:hover .nav-link {}
+
+.navbar .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+
+}
+
+.site-footer {
+    background-image: linear-gradient(#e0ece4, white);
+    padding: 20px 0;
+}
+
+
+#homeCarousel div.carousel-caption {
+    background-color: #f7f2e7a1;
+    border-radius: 50%;
+    top: 30%;
+    height: fit-content;
+
+}
+
+#homeCarousel div.carousel-caption-img {
+    vertical-align: top;
+
+}
+
+#classesCarousel div.carousel-caption {
+    background-color: #3a3b3b8b;
+    justify-content: center;
+}
+
+#classesCarousel h2 {
+    font-weight: bold;
+}
+
+#classesCarousel {
+    border: outset #3a3b3b8b
+}
+
+
+
+
+.carousel-inner>.item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+
+.modal-backdrop {
+    z-index: -1;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto
+}
+
+.card {
+    background-color: #f7f2e770;
+}
+
+#messageForm {
+    background-color: #f7f2e770;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.site-footer ul li a {
+    color: #3a3b3b;
+}
+
+.site-footer a.btn {
+    color: #3a3b3b;
+}
+
+.site-footer div.card {
+    background-color: #3a3b3b00;
+
+}
+
+.site-footer dt {
+    font-weight: normal;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 100;
+}

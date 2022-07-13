@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/get-google-fonts/main.js" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Nadi Yoga Studio</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo3.png" height="40" width="auto" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nadiNavbar">
+                <span class="navbar-toggler-icon"> </span></button>
+            <div class="collapse navbar-collapse" id="nadiNavbar">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class=" nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">About
+                            Us</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="classes.html">Our Classes</a></li>
+                            <li><a class="dropdown-item" href="instructors.html">Our Instructors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tuition.html">Tuition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact </a></li>
+
+                </ul>
+            </div>
+            <div class="col text-right">
+                <span class="navbar-text ml-auto">
+                    <div class="btn-group" role="group" aria-label="login register">
+                        <a role="button" class="btn btn-outline-secondary" id="loginButton">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
+                        <a role="button" class="btn btn-outline-secondary" id="signupButton">
+                            <i class="fa fa-user-plus"></i></i> Sign up
+                        </a>
+                    </div>
+                </span>
+            </div>
+        </div>
+        </div>
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Login</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail">Email adress</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                            placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Sign up</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label class="sr-only" for="signupFName">Name</label>
+                                    <input type="first name" class="form-control form-control-sm" id="signupFName"
+                                        placeholder="First Name">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label class="sr-only" for="signupLName">Name</label>
+                                    <input type="last name" class="form-control form-control-sm" id="signupLName"
+                                        placeholder="Last Name">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="signupEmail">Email adress</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="signupPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="signupPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="confirmPassword">Repeat Password</label>
+                                    <input type="confirm password" class="form-control form-control-sm"
+                                        id="confirmPassword" placeholder="Repeat password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><small>By creating an account, you agree to our <a href="#">Terms &amp;
+                                        Conditions</a>.</small></p>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-success btn-sm ml-1">Create account</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-sm-2">
+                    <h3>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="tuition.html">Tuition</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 col-sm-2">
+                    <h3 class="ml-3"> Social </h3>
+
+                    <a class="btn btn-social-icon btn-instagram ml-3 " href="http://instagram.com/"><i
+                            class="fa fa-instagram fa-lg"></i></a>
+                    <br>
+                    <a class="btn btn-social-icon btn-facebook ml-3" href="http://facebook.com/"><i
+                            class="fa fa-facebook fa-lg"></i></a>
+                    <br>
+                    <a class="btn btn-social-icon btn-twitter ml-3" href="http://twitter.com/"><i
+                            class="fa fa-twitter fa-lg"></i></a>
+                    <br>
+                    <a class="btn btn-social-icon btn-google ml-3" href="http://youtube.com/"><i
+                            class="fa fa-youtube fa-lg"></i></a>
+                </div>
+                <div class="col-6 col-sm-4 text-center">
+                    <a href="index.html"><img class="pt-5" src="img/logo3.png" alt="logo" width="150" height="auto"></a>
+                </div>
+
+
+                <div class="col-sm-4 text-center ">
+                    <a role="button" class="btn btn-link" href="tel: +00000000000"><i class="fa fa-phone"></i>
+                        0-000-000-0000</a>
+                    <a role="button" class="btn btn-link" href="mailto:nadiyogastudio@email.com"> <i
+                            class="fa fa-envelope-o"></i> nadiyogastudio@email.com</a>
+                    <a role="button" class="btn btn-link" href="#"><i class="fa fa-map-marker"></i> 0000 Yogi Street,
+                        Yoga Square
+                        <br>
+                        Mount Laurel, NJ</a>
+                    <div class="card border-0 ">
+                        <p class="text-center"><i class="fa fa-clock-o"></i> Bussiness Hours</p>
+                        <dl class="row">
+                            <dt class="col-6 mb-0 mt-0">Monday - Friday</dt>
+                            <dd class="col-6 mb-0 mt-0">6am - 10am<br> 4pm - 8pm</dd>
+                            <dt class="col-6 mb-0 mt-0">Saturday</dt>
+                            <dd class="col-6 mb-0 mt-0">8am - 14pm</dd>
+                            <dt class="col-6 mb-0 mt-0">Sunday</dt>
+                            <dd class="col-6 mb-0 mt-0">Closed</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+        </div>
+        </div>
+    </footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
